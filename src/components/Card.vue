@@ -1,28 +1,34 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
-    <div class="wrapper">
-       <div class="header">
-        <slot name="header"></slot>
-       </div> 
-       <div class="body">
-        <slot name="body"></slot>
-       </div>
-       <div class="footer">
-        <slot name="footer"></slot>
-       </div>
+  <div class="card">
+    <div id="card-header">
+      <slot name="header"></slot>
     </div>
+    <div id="card-body">
+      <slot name="body"></slot>
+    </div>
+    <div id="card-footer">
+      <slot name="footer"></slot>
+    </div>
+  </div>
 </template>
 <script>
 export default {
-    
-}
+  name: "Card",
+};
 </script>
 <style scoped>
-.wrapper{
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
-    color: black;
+.card {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  padding: 16px;
+  margin-bottom: 20px;
+  width: 200px;
+  border-radius: 2rem;
+  background: white;
 }
-h1{
-    color: green;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
 }
 </style>
