@@ -1,9 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import HeaderComponent from "./components/HeaderComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <template>
   <div class="app-wrapper">
+    <HeaderComponent />
     <div class="nav-bar">
       <nav>
         <RouterLink to="/" class="nav-link">Home</RouterLink>
@@ -12,11 +15,15 @@ import { RouterLink, RouterView } from "vue-router";
     </div>
   </div>
   <RouterView />
+  <FooterComponent />
 </template>
 
 <style >
 html {
   background-color: #2c3e50;
+}
+body {
+  margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -24,11 +31,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 95vh;
+  width: 98vw;
 }
-.wrapper {
-  width: 100%;
+.app-wrapper {
   height: 5rem;
+  margin: 0;
 }
 .nav-bar {
   margin: auto;
@@ -36,7 +44,7 @@ html {
 }
 .nav-link {
   text-decoration: none;
-  background-color: #41777e;
+  background-color: #80a4ed;
   padding: 0.5rem;
   border-radius: 0.5rem;
   margin: 0.25rem;
@@ -44,5 +52,6 @@ html {
 }
 .nav-link:hover {
   padding: 1rem;
+  background-color: #bcd3f2;
 }
 </style>

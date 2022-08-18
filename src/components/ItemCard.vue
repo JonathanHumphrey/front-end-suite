@@ -1,4 +1,4 @@
-<!-- eslint-disable prettier/prettier -->
+a<!-- eslint-disable prettier/prettier -->
 <script setup>
 const cardItems = [
   {
@@ -37,7 +37,7 @@ const cardItems = [
   transition: 0.3s;
   margin-bottom: 20px;
   border-radius: 2rem;
-  background: white;
+  background: #bcd3f2;
   width: 20rem;
 }
 .card:hover {

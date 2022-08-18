@@ -21,6 +21,10 @@ import ItemCard from "./ItemCard.vue";
 <style scoped>
 .card-wrapper {
   height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
 }
 img {
   width: 250px;
